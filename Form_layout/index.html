@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho_layout</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="titlePage">Cadastre seu veículo na nossa loja!</h1>
+    </header>
+    <div class="container">
+        <h2 class="titleForm"><span>FORMULÁRIO</span></h2>
+        <h3>Venda seu veículo conosco!</h3>
+        <p>Descreva as características e escolha os opcionais que seu veículo possui</p>
+        <form>
+            <section>
+            <label for="titulo">Título do anúncio <span>*</span></label> 
+            <br>
+            <input type="text" id="titulo" name="titulo" placeholder="Adicione o título do anúncio:" required>
+            <br>
+            <label for="preco">Preço do anúncios<span>*</span></label> 
+            <br>
+            <input type="number" id="preco" name="preco" placeholder="Adicione o preço do carro:" required>
+            <br>
+            <label for="comment">Descrição<span>*</span></label> 
+            <br>
+            <textarea id="comment" name="comment" placeholder="Coloque os detalhes do seu veículo:" required></textarea>
+            <br>
+            <label for="marca">Marca do veículo</label>
+            <br>
+            <input type="text" id="marca" name="marca" placeholder="Adicione a marca do veículo:">
+            <br>
+            <label for="modelo">Modelo do veículo<span>*</span></label> 
+            <br>
+            <input type="text" id="modelo" name="modelo" placeholder="Adicione a modelo do veículo:" required>
+            <br>
+            <label for="kilometragem">Kilometragem do veículo<span>*</span></label> 
+            <br>
+            <input type="number" id="kilometragem" name="kilometragem" placeholder="Adicione a kilometragem do veículo:" required>
+            <br>
+            <label for="compra">Data de compra do veículo<span>*</span></label> 
+            <br>
+            <input type="date" id="compra" name="compra" required>
+            <br>
+            <label for="cambioModel">Tipo de câmbio:<span>*</span></label> 
+            <br>
+            <br>
+            </section>
+            <section>
+            <div class="radio">
+                <input type="radio" id="manual" value="manual" name="cambioModel" required>
+                <label for="manual">Manual</label>
+                <input type="radio" id="automatico" value="automatico" name="cambioModel">
+                <label for="automatico">Automático</label>
+            </div>
+            </section>
+            <label for="optionales">Opcionais</label>
+            <br>
+            <br>
+            <div class="checkbox">
+                <input type="checkbox" id="airbag" name="optionales[]" value="Airbag">
+                <label for="airbag">Airbag</label>
+                <br>
+                <input type="checkbox" id="alarme" name="optionales[]" value="alarme">
+                <label for="alarme">Alarme</label>
+                <br>
+                <input type="checkbox" id="condicionado" name="optionales[]" value="condicionado">
+                <label for="condicionado">Ar Condicionado</label>
+                <br>
+                <input type="checkbox" id="camera" name="optionales[]" value="camera">
+                <label for="camera">Câmera de Ré</label>
+                <br>
+            </div>
+            <div class="checkbox2">
+                <input type="checkbox" id="assistente" name="optionales[]" value="assistente">
+                <label for="assistente">Assistente de Pista</label>
+                <br>
+                <input type="checkbox" id="keyless" name="optionales[]" value="keyless">
+                <label for="keyless">Partida Keyless</label>
+                <br>
+                <input type="checkbox" id="integracao" name="optionales[]" value="integracao">
+                <label for="integracao">Integração com o Celular</label>
+                <br>
+                <input type="checkbox" id="couro" name="optionales[]" value="couro">
+                <label for="couro">Bancos de Couro</label>
+            </div>
+            <br>
+            <br>
+            <label for="img">Fotos do carro<span>*</span></label> 
+            <br>
+            <br>
+            <input type="file" id="img" name="img" required>
+            <br>
+            <div> 
+                <input type="submit" value="ENVIAR">
+            </div>
+            <br>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
