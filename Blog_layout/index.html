@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 09</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h2 class="title">Blog</h2>
+        <nav aria-label="Navegação principal">
+            <ul class="headLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header-line"></div>
+    
+    <div class="main-content">
+        <section>
+            <div class="container">
+                <figure>
+                    <img src="img/img1.jpg" alt="Barco" class="content-width">
+                    <figcaption class="content-width">Passeio de barco</figcaption>
+                </figure>
+                <p class="description content-width">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in eleifend libero. Nam porta pulvinar orci id
+                    egestas. Quisque ut efficitur ante, eget euismod dui. Nam tempor aliquet lectus nec ornare. Maecenas semper finibus
+                    mi eu accumasan. Duis enim lectus, sollicitudim in efficitur vel, vehicula a dolor.
+                </p>
+                <div class="autor content-width">Por: Paulo Coelho</div>
+                <div class="ler content-width">
+                    <a href="#">Leia o post completo</a>
+                </div>
+                
+                <figure>
+                    <img src="img/img2.jpg" alt="Cachoeira" class="content-width">
+                    <figcaption class="content-width">Passeio na cachoeira</figcaption>
+                </figure>
+                <p class="description content-width">
+                    Aliquam porttitor gravida velit nec semper. Sed eu semper erat. Vestibulum venenatis felis eget ipsum convallis faucibus.
+                    Praesent porttitor tristique tellus a hendrerit. Fusce sollicitudin arcu sed justo commodo, at dignissim neque tristique.
+                    Quisque libero ante, iaculis non nisl ultrices, lobortis egestas massa.
+                </p>
+                <div class="autor content-width">Por: Machado de Assis</div>
+                <div class="ler content-width">
+                    <a href="#">Leia o post completo</a>
+                </div>
+            
+                <figure>
+                    <img src="img/img3.jpg" alt="Balões" class="content-width">
+                    <figcaption class="content-width">Passeio no Balão</figcaption>
+                </figure>
+                <p class="description content-width">
+                    Sed maximus, libero vel ultricies condimentum, orci sem ornare nisi, eget elementum metus nibh eu eros.
+                    Quisque risus nunc, facilisis nec efficitur id, ultricies eget justo. Maecenas a malesuada velit, vel lobortis nulla.
+                    Aenean elementum ac nunc a ultricies. Phasellus dictum felis risus, facilisis commodo justo egestas at.
+                </p>
+                <div class="autor content-width">Por: Luiz Gonzaga</div>
+                <div class="ler content-width">
+                    <a href="#">Leia o post completo</a>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <form class="search-form" action="/search" method="get">
+                <h2>Buscar</h2>
+                <div class="search-container">
+                    <input type="text" name="pesq" placeholder="Pesquisar no blog" aria-label="Pesquisar no blog">
+                    <button type="submit" aria-label="Buscar">Buscar</button>
+                </div>
+            </form>
+            
+            <form class="categories-form" action="/categories" method="get">
+                <h2>Categorias</h2>
+                <ul>
+                    <li><a href="#">Paisagens</a></li>
+                    <li><a href="#">Aventuras</a></li>
+                    <li><a href="#">Montanhas</a></li>
+                    <li><a href="#">Florestas</a></li>
+                    <li><a href="#">Cachoeiras</a></li>
+                </ul>
+            </form>
+
+            <form class="tags-form" action="/tags" method="get">
+                <h2>Tags</h2>
+                <div class="tags-container">
+                    <span class="tag">Lifestyle</span>
+                    <span class="tag">Acampamento</span>
+                    <span class="tag">Barcos</span>
+                    <span class="tag">Trilhas</span>
+                    <span class="tag">Tirolesa</span>
+                    <span class="tag">Rafting</span>
+                    <span class="tag">Paraquedas</span>
+                </div>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <div>
+            <h2>Blog</h2>
+            <p>Nossos melhores registros de aventuras.</p>
+            <p>2025 Copyright © Alunos da Unisinos</p>
+        </div>
+    </footer>
+</body>
+</html>

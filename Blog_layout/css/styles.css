@@ -1,0 +1,282 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /* Inclui padding e borda na largura/altura total */
+    font-family: Georgia, serif; 
+}
+
+body {
+    margin: 0; 
+    width: 100%; 
+    overflow-x: hidden;
+}
+
+.content-width {
+    width: 660px; 
+    margin: 0 auto; 
+    max-width: 100%;
+}
+
+/* Estilos do Header */
+header {
+    background-color: #fff; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 20px; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    max-width: 1200px; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-line {
+    width: 100vw;
+    height: 1px;
+    background-color: #ddd; 
+    margin-left: -20px; 
+}
+
+header .title {
+    padding-left: 101px; 
+}
+
+.headLinks {
+    margin-right: 0; 
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+}
+
+.headLinks li a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 14px; 
+}
+
+.headLinks li a:hover {
+    color: blueviolet; 
+}
+
+/* Layout Principal */
+.main-content {
+    display: flex; 
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1200px; 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+section {
+    flex: 3; 
+    padding: 20px 0;
+}
+
+aside {
+    flex: 1; 
+    padding: 20px 0;
+}
+
+/* Estilos dos Formulários */
+.search-form,
+.categories-form,
+.tags-form {
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+
+.search-form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.search-form .search-container {
+    display: flex; 
+}
+
+.search-form input {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    font-size: 14px; 
+    flex: 1; 
+}
+
+.search-form button {
+    padding: 10px; 
+    background-color: #007bff; 
+    color: #fff;
+    border: none; 
+    cursor: pointer; 
+    font-size: 14px; 
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.categories-form h2,
+.tags-form h2 {
+    margin-bottom: 15px;
+}
+
+.categories-form ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.categories-form ul li {
+    margin-bottom: 10px; 
+}
+
+.categories-form ul li a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 14px; 
+}
+
+.categories-form ul li a:hover {
+    color: blueviolet; 
+}
+
+.tags-form .tags-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.tags-form .tag {
+    background-color: #e9ecef; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    color: #333; 
+    display: inline-block; 
+}
+
+/* Estilos do Conteúdo da Section */
+.container {
+    width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+.container img {
+    display: block; 
+    margin: 0 auto; 
+    width: 660px;
+    height: 438px; 
+}
+
+.container figcaption {
+    text-align: left; 
+    width: 660px; 
+    margin: 20px auto 20px; 
+    font-size: 25px; 
+    font-weight: bold; 
+}
+
+.description,
+.ler,
+.autor {
+    width: 660px;
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+
+.description {
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+.ler {
+    margin-bottom: 20px; 
+}
+
+.ler a {
+    color: #666; 
+    text-decoration: none; 
+}
+
+.ler a:hover {
+    color: #333; 
+}
+
+.autor {
+    margin-bottom: 10px; 
+    font-style: italic; 
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #fff; 
+    border-top: 1px solid #ddd;
+    width: 100vw; 
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Media Query para Telas de Celular (até 768px) */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 10px; 
+        padding: 10px;
+        width: 90%; 
+    }
+
+    section,
+    aside {
+        flex: 100%; 
+        padding: 10px 0; 
+    }
+
+    header {
+        padding: 10px; 
+        max-width: 100%; 
+    }
+
+    header .title {
+        padding-left: 10px; 
+        margin-left: 0; 
+    }
+
+    .headLinks {
+        gap: 10px; 
+    }
+
+    .container img {
+        width: 100%; 
+        max-width: 660px; 
+        height: auto; 
+    }
+
+    .container figcaption {
+        width: 100%; 
+        max-width: 660px; 
+        margin: 10px auto; 
+        font-size: 20px; 
+        font-weight: bold; 
+    }
+
+    .description,
+    .ler,
+    .autor {
+        width: 100%; 
+        max-width: 660px; 
+        margin: 0 auto 15px; 
+    }
+
+    .search-form,
+    .categories-form,
+    .tags-form {
+        padding: 10px; 
+    }
+
+    .header-line {
+        margin-left: -10px; 
+    }
+}

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100%; 
+}
+
+html, body {
+    height: 100%; /* garante que o body ocupe 100% da tela */
+}
+
+.form-container {
+    /* background-color: white; */
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* 
+    COR DA CARTEIRINHA DE ESTUDANTE:
+.form-container {
+    background-color: aquamarine;
+    margin: 0 auto;
+    top: -62px;
+    border-radius: 10px;
+}
+*/
+
+.avatar {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 21px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.cargo {
+    font-size: 14px; 
+    color: #000;
+    font-weight: normal;
+}
+
+.button-container {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.btn-submit {
+    background-color: #34C759;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+@media (max-width: 500px) {
+    html, body {
+        height: auto; /* remove altura fixa em telas pequenas */
+    }
+
+    body {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+
+    .form-container {
+        max-width: none;
+        width: 100%;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info-container {
+        align-items: center;
+    }
+
+    .name {
+        font-size: 18px; 
+        margin-bottom: 5px;
+    }
+
+    .cargo {
+        font-size: 14px; 
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        font-size: 14px; 
+        width: 100%;
+    }
+}
