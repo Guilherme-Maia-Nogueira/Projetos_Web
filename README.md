@@ -1,6 +1,3 @@
-Atelier_layout:
-
-
 Blog_layout:
 ![image](https://github.com/user-attachments/assets/eeeca241-b532-4006-8668-d886e6ebf235)
 ![image](https://github.com/user-attachments/assets/3383cf83-bb64-4188-9b0b-d52be5c4fac9)
