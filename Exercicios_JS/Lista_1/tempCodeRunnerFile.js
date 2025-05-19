@@ -1,0 +1,1 @@
+console.log("A vírgula não é reconhecida como separador decimal, utilize ponto.")
